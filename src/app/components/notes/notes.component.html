@@ -1,0 +1,18 @@
+<div class="notes">
+   <form (submit) ="addNote()">
+    <input 
+			type="text"
+			name="inputNote"
+			placeholder="Enter Note..."
+			class="note-input"
+			[(ngModel)]="inputNote"
+		/>
+        <input type="submit" value="Add Note" class="notesubmit">
+   </form>
+    <div *ngFor="let todo of todos; let i = index;" class="note {{(todo.completed ? 'done' : '')}} " >
+        <div class="id">{{i}}</div>
+        <div class="content"(click)="toggleDone(i)">{{todo.content}}</div>
+        <button class="delete"(click)="deleteNote(i)">Remove</button>
+    </div>
+</div>
+

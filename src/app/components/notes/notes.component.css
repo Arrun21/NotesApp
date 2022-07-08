@@ -1,0 +1,64 @@
+.note {
+	display: flex;
+	padding: 10px 15px;
+	background-color: #FFF;
+	border-bottom: 1px solid #DDD;
+}
+
+.note:nth-child(even) {
+	background-color: #EEE;
+}
+
+.note:last-of-type {
+	border-bottom: 0;
+}
+
+.note .id {
+	flex: 1 1 50px;
+}
+
+.note .content {
+	flex: 1 1 100%;
+}
+
+.note.done .content {
+	text-decoration: line-through;
+}
+
+.note-input {
+	display: block;
+	width: 100%;
+	padding: 10px 15px;
+	appearance: none;
+	border: none;
+	background-color: #F3F3F3;
+	margin-top: 15px;
+	font-size: 20px;
+	outline: none;
+}
+
+.notesubmit {
+	display: block;
+	width: 100%;
+	max-width: 200px;
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+
+	background-color: #1434A4  ;
+	color: #FFF;
+	margin: 15px auto;
+
+	padding: 10px 15px;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.delete{
+    background-color: #FF0000	  ;
+    color: #FFF;
+    padding:10px 10px;
+    font-size: 13px;
+    font-weight: 200;
+}
